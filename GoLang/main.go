@@ -1,11 +1,17 @@
 package main
 
-
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 
 func main() {
 
-fmt.Println("Hallo, wereld!")
+fmt.Println("Hmmm! Welk nummer denk ik nu aan?")
+
+nummer := rand.Intn(100) + 1
+
+
 
 }
