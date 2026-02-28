@@ -13,11 +13,17 @@ nummer := rand.Intn(100) + 1
 
 var gok int
 
-	if gok == nummer {
-		fmt.Println("Gefeliciteerd! Je hebt het juiste nummer geraden!")
-	} if gok < nummer {
+if gok < nummer {
 		fmt.Println("Helaas, het nummer is hoger. Probeer het opnieuw.")
+		return false
 
-	}
+	} else if gok > nummer {
+		fmt.Println("Helaas, het nummer is lager. Probeer het opnieuw.")
+		return false
 
+	} else gok == nummer {
+		fmt.Println("Gefeliciteerd! Je hebt het juiste nummer geraden!")
+		return true
+		
+}
 }
