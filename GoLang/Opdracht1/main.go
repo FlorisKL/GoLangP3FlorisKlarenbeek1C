@@ -23,8 +23,11 @@ func gokspel() bool {
 		fmt.Println("Ongeldige keuze, defaulting to easy mode.")
 		diff = 1
 	}
+
 	diffString := "easy"
+
 	chances := 10
+
 	switch diff {
 	case 2:
 		diffString = "medium"
@@ -37,7 +40,7 @@ func gokspel() bool {
 	for i := 0; i < chances; i++ {
 		fmt.Print("Enter your choice: ")
 		fmt.Scan(&guess)
-		randomNumber(guess, nummer)
+		randwomNumber(guess, nummer)
 		var gok int
 		gok = guess
 
