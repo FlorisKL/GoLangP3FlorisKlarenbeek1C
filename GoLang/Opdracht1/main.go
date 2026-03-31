@@ -40,7 +40,7 @@ func gokspel() bool {
 	for i := 0; i < chances; i++ {
 		fmt.Print("Enter your choice: ")
 		fmt.Scan(&guess)
-		randwomNumber(guess, nummer)
+		randomNumber(guess, nummer)
 		var gok int
 		gok = guess
 
